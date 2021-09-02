@@ -7,4 +7,6 @@ interface IPoolFactory {
     function isPool(address pool) external view returns (bool);
 
     function getSupportedPools() external view returns (ITrueFiPool2[] memory);
+
+    function tvl() external view returns (uint256);
 }
